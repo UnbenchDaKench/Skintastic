@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-skintastic-dev-152525-authRole",
+      "UnauthRoleArn": "arn:aws:iam::857606458116:role/amplify-skintastic-dev-152525-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::857606458116:role/amplify-skintastic-dev-152525-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-skintastic-dev-152525-deployment",
+      "UnauthRoleName": "amplify-skintastic-dev-152525-unauthRole",
+      "StackName": "amplify-skintastic-dev-152525",
+      "StackId": "arn:aws:cloudformation:ca-central-1:857606458116:stack/amplify-skintastic-dev-152525/e01b2650-6eac-11ee-8d71-0e5662806886",
+      "AmplifyAppId": "d31o7njl1zp2eq"
+    },
+    "categories": {
+      "auth": {
+        "skintastic12c0d43a": {
+          "googleClientId": "651171332043-o8kurk0e7mspd3jkbrs1popa634f03at.apps.googleusercontent.com"
+        }
+      },
+      "function": {
+        "skintastic12c0d43aCustomMessage": {
+          "REDIRECTURL": "http://localhost:3000/",
+          "EMAILSUBJECT": "",
+          "EMAILMESSAGE": ""
+        }
+      }
+    }
+  }
+}

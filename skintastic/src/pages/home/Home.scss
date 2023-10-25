@@ -1,0 +1,14 @@
+.Home {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 8vh;
+
+    .featured{
+        width: 30%;
+        height: 100%;
+    }
+}
+.Home.opacity{
+    opacity: 0.5;
+    overflow: hidden;
+}
