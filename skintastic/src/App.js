@@ -24,11 +24,16 @@ import Account from "./pages/account/Account";
 import UserRegistration from "./pages/auth/registration/UserRegistration";
 import Login from "./pages/auth/login/Login";
 import ForgotPassword from "./pages/auth/login/forgotPassword/ForgotPassword";
+import UploadProduct from "./pages/upload/UploadProduct";
 
 export const routes = [
   {
     path: "/",
     element: home,
+  },
+  {
+    path: "/upload",
+    element: UploadProduct
   },
   {
     path: "/signup",

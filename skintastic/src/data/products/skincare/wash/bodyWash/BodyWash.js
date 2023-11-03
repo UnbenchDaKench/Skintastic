@@ -1,6 +1,6 @@
-import BodyBar from "../../../../../images/prducts/skincare/wash/bodyWash/body-bar.jpg"
-import BarStack from "../../../../../images/prducts/skincare/wash/bodyWash/bar-stack.jpg";
-import Shower from "../../../../../images/prducts/skincare/wash/bodyWash/shower.jpg";
+import BodyBar from "../../../../../images/products/skincare/wash/bodyWash/body-bar.jpg"
+import BarStack from "../../../../../images/products/skincare/wash/bodyWash/bar-stack.jpg";
+import Shower from "../../../../../images/products/skincare/wash/bodyWash/shower.jpg";
 
 export const BodyWashPictures = [
   BodyBar,
