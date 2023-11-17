@@ -1,5 +1,5 @@
-import FaceCleanser from "../../../../../images/products/skincare/wash/faceWash/face-cleanser.jpg";
-import RinsingFace from "../../../../../images/products/skincare/wash/faceWash/rinsing-face.jpg";
-import RubbingFace from "../../../../../images/products/skincare/wash/faceWash/rubbing-on-face.jpg";
+import FaceCleanser from "../../../../../images/products/skincare/wash/faceWash/face-cleanser1.jpg";
+import RinsingFace from "../../../../../images/products/skincare/wash/faceWash/face-cleanser2.jpg";
+import RubbingFace from "../../../../../images/products/skincare/wash/faceWash/face-cleanser3.jpg";
 
 export const FaceWashPictures = [FaceCleanser, RinsingFace, RubbingFace];

@@ -28,14 +28,19 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
+let gfs;
+
+const conn = mongoose.createConnection(process.env.MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
 mongoose
-  .connect(
-    process.env.MONGO_URL
-  )
+  .connect(process.env.MONGO_URL)
   .then(() => {
     console.log("connected to mongodb");
-    server.listen(port, ()=>{
-      console.log("app is running on port 9000")
+    server.listen(port, () => {
+      console.log("app is running on port 9000");
     });
     server.on("error", onError);
     server.on("listening", onListening);
@@ -43,9 +48,30 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+  conn.once('open', ()=>{
+    console.log("doing stuff");
+    gfs = new mongoose.mongo.GridFSBucket(conn.db, {
+        bucketName: "photos",
+      });
+  })
 
+// conn.on('error', (error)=>{
+//   console.log('Database Connection error', error)
+// })
 
+// conn.once("open", () => {
+//   // gfs = new mongoose.mongo.GridFSBucket(conn.db, {
+//   //   bucketName: "photos",
+//   // });
+//   console.log("connected to mongodb");
+  
+// });
 
+// server.listen(port, () => {
+//   console.log("app is running on port 9000");
+// });
+// server.on("error", onError);
+// server.on("listening", onListening);
 
 /**
  * Normalize a port into a number, string, or false.

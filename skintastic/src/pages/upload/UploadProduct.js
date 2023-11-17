@@ -7,6 +7,7 @@ function UploadProduct() {
     category: "",
     productName: "",
     productDescription: "",
+    brand: "",
     quantity: "",
     price: "",
     pictures: [],
@@ -16,6 +17,7 @@ function UploadProduct() {
     category,
     productName,
     productDescription,
+    brand,
     quantity,
     price,
     pictures,
@@ -32,19 +34,11 @@ function UploadProduct() {
     }
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(formData);
-    await axios.post("/api/test", formData, {
-      headers: { "Content-Type": "multipart/form-data" },
-    }).catch(err => console.log(err))
-  };
   return (
     <div className="Upload">
       <h1>Add a New Product</h1>
       <form
-        // onSubmit={handleSubmit}
-        action="/api/test"
+        action="/product"
         method="post"
         encType="multipart/form-data"
         name="images"
@@ -75,6 +69,16 @@ function UploadProduct() {
             id="productDescription"
             name="productDescription"
             value={productDescription}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="brand">Brand:</label>
+          <input
+            type="text"
+            id="brand"
+            name="brand"
+            value={brand}
             onChange={handleChange}
           />
         </div>

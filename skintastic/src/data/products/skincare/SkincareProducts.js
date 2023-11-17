@@ -28,7 +28,7 @@ export const SkincareProducts = [
     productId: 2,
     productName: "Alleviating Body Bar",
     productDescription:
-      "This body bar is the one thing you need to feel 100% fresh afteryour showers.with the lasting scent and natural oils, your body wil be feeling brand new",
+      "This body bar is the one thing you need to feel 100% fresh afteryour showers.with the lasting scent and natural oils, your body will be feeling brand new",
     productPictures: BodyWashPictures,
     productPrice: "$20.99",
     brand: "",
